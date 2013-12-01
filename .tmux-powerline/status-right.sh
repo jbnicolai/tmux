@@ -50,19 +50,19 @@ if [[ ${now_playing["script"]} ]]; then
 fi
 
 
-#declare -A cpu
-#cpu+=(["script"]="${segments_path}/cpu.sh")
-#cpu+=(["foreground"]="colour255")
-#cpu+=(["background"]="colour234")
-#cpu+=(["separator"]="${separator_left_bold}")
-#register_segment "cpu"
+declare -A cpu
+cpu+=(["script"]="${segments_path}/cpu.sh")
+cpu+=(["foreground"]="colour255")
+cpu+=(["background"]="colour234")
+cpu+=(["separator"]="${separator_left_bold}")
+register_segment "cpu"
 
-#declare -A load
-#load+=(["script"]="${segments_path}/load.sh")
-#load+=(["foreground"]="colour253")
-#load+=(["background"]="colour235")
-#load+=(["separator"]="${separator_left_bold}")
-#register_segment "load"
+declare -A load
+load+=(["script"]="${segments_path}/load.sh")
+load+=(["foreground"]="colour253")
+load+=(["background"]="colour235")
+load+=(["separator"]="${separator_left_bold}")
+register_segment "load"
 
 declare -A battery
 if [ "$PLATFORM" == "mac" ]; then
@@ -91,12 +91,12 @@ register_segment "battery"
 #fi
 #register_segment "xkb_layout"
 
-#declare -A date_day
-#date_day+=(["script"]="${segments_path}/date_day.sh")
-#date_day+=(["foreground"]="black")
-#date_day+=(["background"]="colour249")
-#date_day+=(["separator"]="${separator_left_bold}")
-#register_segment "date_day"
+declare -A date_day
+date_day+=(["script"]="${segments_path}/date_day.sh")
+date_day+=(["foreground"]="black")
+date_day+=(["background"]="colour249")
+date_day+=(["separator"]="${separator_left_bold}")
+register_segment "date_day"
 
 declare -A date_full
 date_full+=(["script"]="${segments_path}/date_full.sh")

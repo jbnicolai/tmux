@@ -14,13 +14,13 @@ segments_path="${cwd}/${segments_dir}"
 
 # Segments
 
-#declare -A tmux_session_info
-#tmux_session_info+=(["script"]="${segments_path}/tmux_session_info.sh")
-#tmux_session_info+=(["foreground"]="colour250")
-#tmux_session_info+=(["background"]="colour240")
-#tmux_session_info+=(["separator"]="${separator_right_bold}")
-##tmux_session_info+=(["separator_fg"]="default")
-#register_segment "tmux_session_info"
+declare -A tmux_session_info
+tmux_session_info+=(["script"]="${segments_path}/tmux_session_info.sh")
+tmux_session_info+=(["foreground"]="colour250")
+tmux_session_info+=(["background"]="colour240")
+tmux_session_info+=(["separator"]="${separator_right_bold}")
+#tmux_session_info+=(["separator_fg"]="default")
+register_segment "tmux_session_info"
 
 declare -A username
 username+=(["script"]="${segments_path}/username.sh")
