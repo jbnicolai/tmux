@@ -50,19 +50,19 @@ if [[ ${now_playing["script"]} ]]; then
 fi
 
 
-declare -A cpu
-cpu+=(["script"]="${segments_path}/cpu.sh")
-cpu+=(["foreground"]="colour255")
-cpu+=(["background"]="colour234")
-cpu+=(["separator"]="${separator_left_bold}")
-register_segment "cpu"
+#declare -A cpu
+#cpu+=(["script"]="${segments_path}/cpu.sh")
+#cpu+=(["foreground"]="colour255")
+#cpu+=(["background"]="colour234")
+#cpu+=(["separator"]="${separator_left_bold}")
+#register_segment "cpu"
 
-declare -A load
-load+=(["script"]="${segments_path}/load.sh")
-load+=(["foreground"]="colour253")
-load+=(["background"]="colour235")
-load+=(["separator"]="${separator_left_bold}")
-register_segment "load"
+#declare -A load
+#load+=(["script"]="${segments_path}/load.sh")
+#load+=(["foreground"]="colour253")
+#load+=(["background"]="colour235")
+#load+=(["separator"]="${separator_left_bold}")
+#register_segment "load"
 
 declare -A battery
 if [ "$PLATFORM" == "mac" ]; then
