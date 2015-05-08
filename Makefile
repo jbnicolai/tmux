@@ -1,6 +1,6 @@
 PWD = `pwd`
 FILES = ".tmux.conf"
-DIRS = ".tmux-powerline"
+DIRS = ".tmux-powerline" ".tmux"
 
 all: linkfiles linkdirs
 
